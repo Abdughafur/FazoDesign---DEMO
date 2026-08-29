@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAZO DESIGN — Студия дизайна интерьера и экстерьера</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="loader-spinner"></div>
+        <span class="loader-text">FAZO DESIGN</span>
+    </div>
+
+    <header>
+        <a href="#home" class="logo-container">
+            <img src="pics/logo.jpg" alt="FAZO DESIGN Logo" class="logo-img">
+            <span>FAZO DESIGN</span>
+        </a>
+
+        <nav class="desktop-nav">
+            <a href="#home">Главная</a>
+            <a href="#projects">Проекты</a>
+            <a href="#how-it-works">Этапы</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+    </header>
+
+    <div class="menu-toggle" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="mobile-nav-overlay" id="mobileOverlay">
+        <div class="mobile-menu-card">
+            <a href="#home" onclick="closeMobileMenu()">Главная</a>
+            <a href="#projects" onclick="closeMobileMenu()">Проекты</a>
+            <a href="#how-it-works" onclick="closeMobileMenu()">10 Этапов</a>
+            <a href="#contact" onclick="closeMobileMenu()">Контакты</a>
+        </div>
+    </div>
+
+    <main class="hero-section" id="home">
+        <div class="hero-content">
+            <div class="glass-card">
+                <h1>FAZO DESIGN</h1>
+                <p>Студия интерьерного и экстерьерного дизайна, где эстетика встречается с функциональностью, а каждая
+                    деталь работает на ваш комфорт.</p>
+                <a href="#contact" class="btn-cta">Заказать дизайн</a>
+            </div>
+
+            <div class="sofa-visual">
+                <img class="bg-slide active" src="pics/interier01.jpg" alt="Интерьер">
+                <img class="bg-slide" src="pics/interier02.jpg" alt="Интерьер">
+                <img class="bg-slide" src="pics/interier03.jpg" alt="Интерьер">
+            </div>
+        </div>
+
+        <div class="bottom-cards-container">
+            <div class="feature-card active" onclick="setSlide(0)">
+                <img class="bg-slide active" src="pics/interier01.jpg" alt="Интерьер 01">
+                <span>Интерьер 01</span>
+            </div>
+            <div class="feature-card" onclick="setSlide(1)">
+                <img src="pics/interier02.jpg" alt="Интерьер 02">
+                <span>Интерьер 02</span>
+            </div>
+            <div class="feature-card" onclick="setSlide(2)">
+                <img src="pics/interier03.jpg" alt="Интерьер 03">
+                <span>Интерьер 03</span>
+            </div>
+        </div>
+    </main>
+
+    <section class="values-section">
+        <div class="values-grid">
+            <div class="value-card">
+                <h4>Стиль</h4>
+                <p>Уникальные концептуальные решения</p>
+            </div>
+            <div class="value-card">
+                <h4>Гармония</h4>
+                <p>Баланс красоты и функциональности</p>
+            </div>
+            <div class="value-card">
+                <h4>Качество</h4>
+                <p>Внимание к каждой детали проекта</p>
+            </div>
+            <div class="value-card">
+                <h4>Доверие</h4>
+                <p>Индивидуальный подход к каждому</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+        <div class="section-header">
+            <h2 class="section-title">Наши Проекты</h2>
+            <p class="section-subtitle">Работы по дизайну интерьеров и экстерьеров, выполненные в тёплой природной
+                палитре.</p>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=800&q=80"
+                        alt="Интерьер">
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Интерьерный дизайн</span>
+                    <h3 class="project-title">Теплый Минимализм</h3>
+                    <p class="project-desc">Мягкие бежевые тона, натуральное дерево и гармоничный свет.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+                        alt="Загородный дом">
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Экстерьерный дизайн</span>
+                    <h3 class="project-title">Загородная Вилла</h3>
+                    <p class="project-desc">Современная архитектура с органической интеграцией в ландшафт.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80"
+                        alt="Гостиная">
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Авторский надзор</span>
+                    <h3 class="project-title">Апартаменты Эстетика</h3>
+                    <p class="project-desc">Полный контроль за ходом реализаций и подбором материалов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works-section" id="how-it-works">
+        <div class="section-header">
+            <h2 class="section-title">10 Этапов работы</h2>
+            <p class="section-subtitle">Полный прозрачный процесс реализации проекта от идеи до сдачи ключей.</p>
+        </div>
+
+        <div class="carousel-wrapper">
+            <div class="carousel-track-container">
+                <div class="carousel-track" id="carouselTrack">
+
+                    <div class="carousel-item">
+                        <img src="pics/01.jpg" alt="Консультация">
+                        <div class="carousel-content">
+                            <span class="step-number">ЭТАП 01</span>
+                            <h4>БРИФ И ЗАДАЧИ</h4>
+                            <p>Изучаем ваши пожелания, образ жизни, задачи и бюджет, чтобы задать точное направление
+                                проекта.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="pics/02.jpg" alt="Обмер">
+                        <div class="carousel-content">
+                            <span class="step-number">ЭТАП 02</span>
+                            <h4>ЗАМЕРЫ ОБЪЕКТА</h4>
+                            <p>Фиксируем точные размеры помещения и все особенности, которые важны для разработки
+                                проекта.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="pics/03.jpg" alt="Планировка">
+                        <div class="carousel-content">
+                            <span class="step-number">ЭТАП 03</span>
+                            <h4>ПЛАНИРОВОЧНОЕ РЕШЕНИЕ</h4>
+                            <p>Продумываем удобную расстановку мебели и функциональную организацию пространства.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="pics/04.jpg" alt="Концепция">
+                        <div class="carousel-content">
+                            <span class="step-number">ЭТАП 04</span>
+                            <h4>КОНЦЕПЦИЯ И СТИЛЬ</h4>
+                            <p>Подбираем палитру, материалы и визуальное направление будущего интерьера.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="pics/05.jpg" alt="Визуализация">
+                        <div class="carousel-content">
+                            <span class="step-number">ЭТАП 05</span>
+                            <h4>3D-ВИЗУАЛИЗАЦИЯ</h4>
+                            <p>Показываем, как будет выглядеть интерьер еще до начала ремонта и закупок.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="pics/06.jpg" alt="Чертежи">
+                        <div class="carousel-content">
+                            <span class="step-number">ЭТАП 06</span>
+                            <h4>РАБОЧИЕ ЧЕРТЕЖИ</h4>
+                            <p>Готовим комплект документации для строителей, чтобы реализация шла точно по проекту.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="pics/07.jpg" alt="Смета">
+                        <div class="carousel-content">
+                            <span class="step-number">ЭТАП 07</span>
+                            <h4>СМЕТА ПРОЕКТА</h4>
+                            <p>Составляем подробную смету, чтобы вы заранее понимали объем работ и бюджет проекта.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="pics/08.jpg" alt="Комплектация">
+                        <div class="carousel-content">
+                            <span class="step-number">ЭТАП 08</span>
+                            <h4>КОМПЛЕКТАЦИЯ</h4>
+                            <p>Подбираем мебель, освещение, отделочные материалы и позиции, подходящие под ваш проект.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="pics/09.jpg" alt="Надзор">
+                        <div class="carousel-content">
+                            <span class="step-number">ЭТАП 09</span>
+                            <h4>АВТОРСКИЙ НАДЗОР</h4>
+                            <p>Контролируем соответствие реализации проекту и помогаем решать вопросы на каждом этапе
+                                работ.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="pics/10.jpg" alt="Сдача">
+                        <div class="carousel-content">
+                            <span class="step-number">ЭТАП 10</span>
+                            <h4>РЕАЛИЗАЦИЯ ПРОЕКТА</h4>
+                            <p>Берем на себя все этапы реализации — от закупок и логистики до финальных штрихов и сдачи
+                                объекта.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carousel-controls">
+                <button class="carousel-btn" onclick="moveCarousel(-1)">&#10094;</button>
+                <div class="carousel-dots" id="carouselDots"></div>
+                <button class="carousel-btn" onclick="moveCarousel(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="section-header">
+            <h2 class="section-title">Связаться с нами</h2>
+            <p class="section-subtitle">Свяжитесь с нами напрямую через Instagram, по телефону или посетите нас в
+                Душанбе.</p>
+        </div>
+
+        <div class="contact-unified-container">
+            <div class="contact-left">
+                <div class="contact-info-boxes">
+                    <div class="info-card">
+                        <div class="info-card-icon">📍</div>
+                        <div class="info-card-text">
+                            <span>Локация</span>
+                            <strong>Душанбе</strong>
+                        </div>
+                    </div>
+
+                    <a href="tel:+992009665822" class="info-card">
+                        <div class="info-card-icon">📞</div>
+                        <div class="info-card-text">
+                            <span>Телефон</span>
+                            <strong>+992 00 966 5822</strong>
+                        </div>
+                    </a>
+
+                    <a href="https://instagram.com/@fazo.desgn/" target="_blank" class="info-card">
+                        <div class="info-card-icon">📷</div>
+                        <div class="info-card-text">
+                            <span>Instagram</span>
+                            <strong>@fazo.design</strong>
+                        </div>
+                    </a>
+                </div>
+
+                <a href="https://instagram.com/@fazo.design/" target="_blank" class="btn-instagram-direct">
+                    <span>Написать в Instagram</span>
+                </a>
+            </div>
+
+            <div class="contact-right">
+                <iframe class="map-iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50000!2d68.78!38.56!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b5d15a00000001%3A0x1!2zRHVzaGFuYmUsIFRhamlraXN0YW4!5e0!3m2!1sen!2s!4v1600000000000!5m2!1sen!2s"
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 FAZO DESIGN. Все права защищены.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
+
+<!-- Copyright FazoDesign / Abdughafur 2026 -->
